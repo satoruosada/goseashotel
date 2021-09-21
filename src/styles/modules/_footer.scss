@@ -1,0 +1,182 @@
+.footer {
+  @extend .pt-90;
+  &__inner {
+    @extend .main-content;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__nav {
+    &-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 30px 0;
+
+      & a {
+        width: 20%;
+        color: #0068b6;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    background-color: #0068b6;
+    border-radius: 10px;
+  }
+
+  &__flex {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__left {
+    width: 40%;
+    color: #fff;
+    padding-left: 70px;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__name {
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    right: 3px;
+  }
+
+  &__add {
+    font-size: 16px;
+  }
+
+  &__tel {
+    font-size: 16px;
+  }
+
+  &__mail {
+    font-size: 16px;
+
+    & > span {
+      border-bottom: 1px solid #fff;
+    }
+
+    &-a {
+      color: #fff;
+
+      &:hover {
+        color: #fff;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  &__right {
+    width: 60%;
+    color: #fff;
+    padding-left: 40px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      top: 10px;
+
+      & > img {
+          position: relative;
+          top: -2px;
+      }
+    }
+
+    &-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &-tel {
+      font-size: 60px;
+      font-weight: bold;
+
+      & > a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: #fff;
+          opacity: 0.6;
+        }
+      }
+    }
+
+    &-time {
+      font-size: 16px;
+    }
+    &-date {
+      font-size: 16px;
+    }
+    &-name {
+      font-size: 20px;
+      font-weight: bold;
+      position: relative;
+      bottom: 15px;
+    }
+  }
+
+  &__bottom {
+      margin-top: 70px;
+   
+      &-img {
+        background-image: url(../images/top/footer_weave.png);
+        @extend .back-img;
+        position: relative;
+
+        &::after {
+          @extend .back-img::after;
+          padding-top: 10%;
+        }
+      }
+    &-inner {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translateX(-50%);
+      @extend .main-content;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &-copyright {
+        color: #fff;
+    }
+  }
+  &__baner {
+    &-wrap {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__baner01 {
+    margin-right: 40px;
+  }
+  &__scroll {
+    position: absolute;
+    top: -30px;
+    right: 70px;
+  }
+}

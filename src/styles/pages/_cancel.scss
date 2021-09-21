@@ -1,0 +1,53 @@
+.cancel {
+	position: relative;
+	z-index: 3;
+	top: -150px;
+
+	&__main {
+		margin-bottom: -100px;
+	}
+
+	&__inner {
+		background-color: #fff;
+		width: 80%;
+		margin: 0 auto;
+		padding: 60px 0 0 0;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+
+		& table {
+			border-collapse: collapse;
+			text-align: center;
+			border: 4px solid #cbcbcb;
+			width: 85%;
+			margin: 30px auto;
+		}
+
+		& th,
+		td {
+			border: 2px solid #cbcbcb;
+			width: 20%;
+		}
+
+		& td {
+			height: 70px;
+			font-size: 24px;
+		}
+
+		& th {
+			background-color: rgba(84, 194, 240, 0.2);
+			font-size: 18px;
+			font-weight: normal;
+			padding: 20px 0;
+
+			& div {
+				font-size: 24px;
+			}
+		}
+	}
+
+	&__txt {
+		width: 85%;
+		margin: 0 auto;
+	}
+}

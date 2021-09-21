@@ -1,0 +1,12 @@
+@media(max-width:720px) and (-ms-high-contrast: none) {
+
+    .dinner {
+        &__menu {
+            margin-top: 0;
+
+            section:nth-child(2) & {
+                margin-top: 0px !important;
+            }
+        }
+    }
+}

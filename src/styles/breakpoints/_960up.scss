@@ -1,177 +1,412 @@
-@media(max-width:960px) {
-
-    .header {
-
-        &.triggered {
-            background-color:#ffffff;
-            mix-blend-mode: unset;
-          }
-
-        &__nav {
-            display: none;
-        }
+@media screen and (max-width: 960px) {
+  .hero {
+    &__image {
+      &::after {
+        padding-top: 60%;
+      }
     }
 
-    .mobile-menu {
-
-        &__btn {
-            display: block;
-            width: 80px;
-            height: 80px;
-            background-color: #2d5a6e;
-        }
+    &__top {
+      width: 45%;
     }
 
-    .hero {
-        padding-top: 80px;
-
-        &__title {
-            font-size: 27px;
-        }
-    }
-
-
-    .info {
-        &__panel {
-            margin-left: 50px;
-        }
-    }
-
-    .category {
-        &__inner {
-            width: 100%;
-        }
-
-        &__images {
-            width: 100%;
-        }
-
-        &__panel {
-            margin: 12px 0;
-            top: -20px;
-        }
-
-        &__cover {
-            width: 100%;
-        }
-
-        &__txt {
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        &__item {
-            & > img {
-                height: 200px;
-                object-fit: cover;
-            }
-        }
-        &__parallax {
-            margin-top: 60px;
-          
-            &::after {
-                content: '';
-                display: block;
-                padding-top: 35%;
-            }
-        }
-    }
-
-    .store {
-        &__wrapper {
-            flex-direction: column;
-            width: 100%;
-            padding-top: 30px;
-            margin: 0 auto;
-        }
-
-        &__images {
-            width: 60%;
-
-            & > img {
-                width: 100%;
-            }
-        }
-
-        &__des {
-            padding-left: 0;
-            width: 400px;
-            position: relative;
-            margin-top: 80px;
-
-            & > img {
-                position: absolute;
-                top: -20%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        &__content {
-            padding-left: 13px;
-            padding-bottom: 10px;
-        }
-    }
-
-    .icon {
+    &__title {
+      width: 80%;
+      & > img {
         width: 80%;
-
-        &__p {
-            padding-left: 0;
-        }
-
-        &__txt {
-            padding-left: 0;
-            & > span {
-                padding-left: 0;
-            }
-        }
-        &__wrapper {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &__left {
-            width: 90%;
-            margin-left: 0;
-            margin-top:30px ;
-        }
-       
+      }
     }
 
-    .top {
-        &__news {
-            &::after {
-                padding-top: 40%;
-            }
-        }
+    &__icon {
+      &-sns {
+        display: none;
+      }
+      &-info {
+        display: none;
+      }
     }
+  }
 
-    .accordion_cover {
+  .main {
+    &__inner {
+      &-txt {
         width: 100%;
+        bottom: 10px;
+      }
     }
+
+    &__right {
+      position: relative;
+      top: 200px;
+      left: 30px;
+      width: 85%;
+    }
+
+    &__title {
+      width: 100%;
+      position: relative;
+
+      & > h1 {
+        font-size: 45px;
+      }
+    }
+    &__txt {
+      width: 100%;
+      position: relative;
+
+      & > p {
+        font-size: 17px;
+      }
+    }
+  }
+
+  .news {
+    &__weave {
+      &-span01 {
+        display: none;
+      }
+      &-span02 {
+        display: none;
+      }
+      &-img {
+        padding-bottom: 220px;
+      }
+      &-whiteimg {
+        width: 100%;
+        height: 50%;
+        border-radius: unset;
+      }
+
+      &-person01 {
+        top: -5%;
+      }
+      &-person03 {
+        display: none;
+      }
+    }
+
+    &__concept {
+      &-wrap {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .panel {
+    width: 90%;
+    margin: 0 auto;
+
+    &__wrap {
+      flex-direction: column;
+    }
+  }
+
+  .flow {
+    &__content {
+      height: auto;
+      &-wrap {
+        flex-direction: column;
+      }
+    }
+
+    &__img {
+      margin: -30px 10px 20px;
+      transform: rotate(90deg);
+
+      &-cal {
+        margin-bottom: 40px;
+      }
+    }
+
+    &__contact {
+      margin: 0 auto;
+
+      &-wrap {
+        flex-direction: column;
+      }
+      &-time {
+        margin: 0 auto;
+      }
+    }
+    &__tel {
+      &-wrap {
+        margin: 0 0 15px 0;
+      }
+    }
+  }
+
+  .activity {
+    &__backimg {
+      padding-top: 40%;
+    }
+
+    &__heading {
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%;
+      font-weight: 700;
+    }
+    &__icon {
+      &-yoto {
+        display: none;
+      }
+    }
+    &__icon01 {
+      opacity: 0.6;
+    }
+    &__icon02 {
+      opacity: 0.6;
+    }
+  }
+
+  // roomsページ
+  .hero-img {
+    &__icon {
+      &-sns {
+        display: none;
+      }
+    }
+    &__icon {
+      &-info {
+        display: none;
+      }
+    }
+  }
+  .setsubi {
+    padding-bottom: 0;
+    &__toptxt {
+      height: 80%;
+      line-height: 30px;
+      padding: 10px;
+      text-align: left;
+    }
+  }
+
+  .footer {
+    &__content {
+      height: 350px;
+      width: 60%;
+    }
+    &__flex {
+      flex-direction: column;
+    }
+
+    &__center {
+      & > img {
+        transform: rotate(90deg);
+        position: relative;
+        bottom: 50px;
+      }
+    }
+
+    &__left {
+      width: 90%;
+      text-align: center;
+      padding-left: 0;
+      line-height: 27px;
+    }
+    &__right {
+      width: 90%;
+      text-align: center;
+      padding-left: 0;
+      position: relative;
+      bottom: 90px;
+
+      &-title {
+        font-size: 15px;
+        top: -1px;
+      }
+
+      &-tel {
+        & > a {
+          position: relative;
+          top: -5px;
+        }
+      }
+
+      &-name {
+        bottom: 40px;
+      }
+
+      &-flex {
+        flex-direction: column;
+      }
+
+      &-flex2 {
+        position: relative;
+        bottom: -20px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__scroll {
+      bottom: 58%;
+    }
+  }
+
+  // facilitesページ
+  .taisaku {
    
+    &__inner {
+      width: 60%;
+      flex-direction: column;
+    }
+    &__panel {
+      width: 100%;
+      margin-top: 30px;
 
-    .accordion__title {
-        left: 50%;
-        top: 30%;
-        transform: translate(-50%, -50%);
-    }
+      & > p {
 
-    .accordion_title-wrapper {
-        left: 50%;
+      }
     }
-    .accordion_one:nth-child(2n) .accordion_header > .accordion_title-wrapper {
-        right: 50%;
-    }
-    .box_one-image01 {
-        & > img {
-            height: 180px;
+  }
+
+  //flowページ
+  .flow-info {
+    &__table {
+      padding: 60px 0 0 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow-x: scroll;
+  
+      &-wrap {
+        width: 70%;
+        margin: 0 auto;
+      }
+  
+      & > table {
+        width: 100%;
+        border: 4px solid #cbcbcb;
+        background-color: #fff;
+        margin: 0 auto;
+        border-collapse: collapse;
+        white-space: nowrap;
+  
+        & > tbody > tr {
+          display: flex;
+          border-bottom: 2px solid #cbcbcb;
+  
+          &:last-child {
+            border-bottom: none;
+          }
+  
+          & > th {
+            border-right: 2px solid #cbcbcb;
+            font-size: 18px;
+            width: 20%;
+            font-weight: 700;
+            padding: 15px 20px;
+            text-align: left;
+            background-color: rgba(84, 194, 240, 0.2);
+            & > span {
+              opacity: 1;
+              color: black;
+            }
+          }
+          & td {
+            font-size: 16px;
+            width: 80%;
+            font-weight: 400;
+            padding: 15px 20px;
+            text-align: left;
+          }
         }
+      }
     }
-    .box_one-image02 {
-        & > img {
-            height: 180px;
+  }
+
+   //mealページ
+   .meal-info {
+    &__table {
+      padding: 60px 0 0 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow-x: scroll;
+  
+      &-wrap {
+        width: 70%;
+        margin: 0 auto;
+      }
+  
+      & > table {
+        width: 100%;
+        border: 4px solid #cbcbcb;
+        background-color: #fff;
+        margin: 0 auto;
+        border-collapse: collapse;
+        white-space: nowrap;
+  
+        & > tbody > tr {
+          display: flex;
+          border-bottom: 2px solid #cbcbcb;
+  
+          &:last-child {
+            border-bottom: none;
+          }
+  
+          & > th {
+            border-right: 2px solid #cbcbcb;
+            font-size: 18px;
+            width: 20%;
+            font-weight: 700;
+            padding: 15px 20px;
+            text-align: left;
+            background-color: rgba(84, 194, 240, 0.2);
+            & > span {
+              opacity: 1;
+              color: black;
+            }
+          }
+          & td {
+            font-size: 16px;
+            width: 80%;
+            font-weight: 400;
+            padding: 15px 20px;
+            text-align: left;
+          }
         }
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #global {
+    &-nav {
+      &.m_fixed {
+        width: 100%;
+      }
+    }
+  }
+
+  .global {
+    &-inner {
+      display: none;
+    }
+  }
+
+  .mobile-menu__btn {
+    display: block;
+  }
+
+  .header {
+    &__nav {
+      display: none;
+    }
+  }
+  .main {
+    &__icon {
+      &-sns {
+        display: none;
+      }
+      &-info {
+        display: none;
+      }
+    }
+  }
 }

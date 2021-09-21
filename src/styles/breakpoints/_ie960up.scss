@@ -1,0 +1,26 @@
+@media(max-width:960px) and (-ms-high-contrast: none) {
+
+    .main {
+
+        &__text {
+            &-des {
+               writing-mode: horizontal-tb;
+    
+               & > p {
+                -ms-writing-mode: lr-tb;
+                writing-mode: horizontal-tb;
+                height: 50% !important;
+               }
+    
+            }
+            &-yusyou {
+                right: 20px;
+                color: #323232;
+                writing-mode: vertical-rl;
+                -webkit-writing-mode: vertical-rl;
+                -ms-writing-mode: tb-rl;
+                -o-writing-mode: vertical-rl;
+            }
+        }
+    }
+}

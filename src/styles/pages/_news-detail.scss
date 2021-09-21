@@ -1,0 +1,51 @@
+// 共通パーツ
+.txt-left {
+  width: 80%;
+  text-align: left;
+  bottom: 0 !important;
+  transform: translate(-50%, 0%) !important;
+}
+.news {
+  &__detail {
+    &-inner {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1200px;
+      & > div {
+          margin: 30px 0;
+
+          & + img {
+              width: 100%;
+          }
+      }
+    }
+    &-date {
+      display: inline-block;
+      padding-right: 15px;
+      font-weight: 700;
+    }
+
+    &-icon {
+      display: inline-block;
+      width: 80px;
+      height: 25px;
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+      border-radius: 15px;
+      margin-right: 20px;
+    }
+
+    &-articlettl {
+      font-size: 28px;
+      font-weight: 700;
+      border-bottom: 1px dotted #b2b2b2;
+      padding-bottom: 20px;
+    }
+
+    &-btn {
+        text-align: center;
+        margin-top: 50px;
+    }
+  }
+}

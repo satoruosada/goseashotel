@@ -1,0 +1,27 @@
+.error {
+    position: relative;
+    z-index: 3;
+    top: -150px;
+
+    &__main {
+        margin-bottom: -150px;
+    }
+
+    &__inner {
+        background-color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 0 0 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align: center;
+
+        & > div {
+            line-height: 2;
+        }
+    }
+
+    &__icon {
+        margin: 70px 0;
+    }
+}

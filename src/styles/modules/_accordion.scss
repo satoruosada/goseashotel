@@ -1,0 +1,192 @@
+// アコーディオン
+/* チェックボックスは非表示 */
+.accordion {
+  color: white;
+  margin-top: 90px;
+
+  &-open {
+    font-size: 20px;
+  }
+
+  &__inner {
+    padding: 30px;
+  }
+
+  &__txt {
+    font-weight: 400;
+    &-des {
+      border-top: 2px dotted #ffffff;
+      position: relative;
+      bottom: 35px;
+      padding-top: 30px;
+      font-weight: 400;
+    }
+
+    &-ttl {
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 0 30px;
+    position: relative;
+    
+    & > img {
+      padding-right: 5px;
+    }
+    &-wrap {
+      text-align: center;
+    }
+  }
+}
+.accordion-hidden {
+  display: none;
+}
+
+/* Question部分 */
+.accordion-open {
+  margin: 0;
+  display: block;
+  padding: 10px;
+  background: #0068b6;
+  cursor: pointer;
+  font-weight: 700;
+  position: relative; /* 変更部分 */
+  text-align: center;
+}
+
+/* 開閉状態を示すアイコン+の作成 */
+.accordion-open::before,
+.accordion-open::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+
+/* 一本は縦にして+を作る */
+.accordion-open::after {
+  transform: translateY(-50%) rotate(90deg);
+  transition: 0.5s;
+}
+
+/* アコーディオンが開いたら縦棒を横棒にして-にする */
+.accordion-hidden:checked + .accordion-open:after {
+  transform: translateY(-50%) rotate(0);
+}
+
+/* Answer部分 */
+.accordion-close {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  transition: 1.5s; /* 表示速度の設定 */
+}
+
+/* チェックボックスにチェックが入ったらAnswer部分を表示する */
+.accordion-hidden:checked + .accordion-open + .accordion-close {
+  height: auto;
+  opacity: 1;
+  padding: 10px;
+  background: #0068b6;
+  font-weight: 700;
+}
+
+
+// faqページ
+.accordion-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  border-top: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.accordion-container .accordion-title {
+  display: block;
+  position: relative;
+  margin: 15px 0;
+  padding: 5px 30px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  background: #54c2f0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.accordion-container .accordion-title:hover,
+.accordion-container .accordion-title:active,
+.accordion-container .content-entry.open .accordion-title {
+  color: white;
+}
+
+.accordion-container .accordion-title:hover i:before,
+.accordion-container .accordion-title:hover i:active,
+.accordion-container .content-entry.open i {
+  color: white;
+}
+
+.accordion-title{
+  position: relative;
+
+  & > span {
+    font-size: 32px;
+    padding-right: 10px;
+  }
+}
+
+.accordion-title:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: 38%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.accordion-title.open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+}
+
+.accordion-content {
+  display: none;
+  padding: 0 30px 10px;
+
+ & > span {
+   font-size: 32px;
+   font-weight: 700;
+   color: #54c2f0;
+   padding-right: 10px;
+   position: relative;
+   bottom: -7px;
+ }
+
+  & > p {
+    margin: 0;
+    font-size: 16px;
+    display: inline-block;
+  }
+}

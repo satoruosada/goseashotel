@@ -1,8 +1,96 @@
-#global-container {
-    display: none;
-    min-height: 100%;
+.header {
+    &__inner {
+        justify-content: space-around;
+    }
 }
-.container {
-    display: block;
-   
+
+.main {
+
+    &__backimage {
+        background-image: url(../image/umihaikei.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        &::after {
+            content: '';
+            display: block;
+            padding-top: 50%;
+            
+        }
+    }
+    
+    &__text {
+        
+        &-des {
+           writing-mode: horizontal-tb;
+
+           & > p {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+               height: 300px !important;
+           }
+
+        }
+
+        &-topimages {
+            margin-right: 5px;
+            &-ie {
+              
+            }
+            & > img {
+               
+            }
+        }
+
+    }
+}
+
+.drink {
+    &__bottomimage {
+        background-image: url(../image/drink.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        &::before {
+            content: '';
+            display: block;
+            padding-top: 50%;
+        }
+        
+    }
+    &__menu {
+      
+    }
+    
+}
+
+.dinner {
+    &__menu {
+       
+
+        & > table {
+            & tr {
+                width: 300px;
+                display: -ms-flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            & td {
+                margin: 0 20px 0;
+                display: inline-block;
+            }
+        }
+    }
 }

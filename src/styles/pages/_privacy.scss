@@ -1,0 +1,52 @@
+.pri {
+    position: relative;
+    z-index: 3;
+    top: -150px;
+
+    &__main {
+        margin-bottom: -150px;
+    }
+
+    &__inner {
+        background-color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding: 60px 0 0 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align: center;
+    }
+
+    &__ttl {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    &__info {
+        width: 90%;
+        margin: 80px auto;
+        max-width: 1200px;
+        text-align: left;
+
+        &-block {
+            margin: 50px 0 0 0;
+        }
+
+        &-ttl {
+            color: #0068b6;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        &-txt {
+            line-height: 2;
+            margin-top: 5px;
+        }
+
+        &-txtcenter {
+            padding-left: 30px;
+            margin-top: 5px;
+        }
+    }
+}

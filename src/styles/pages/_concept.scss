@@ -1,0 +1,28 @@
+/*-------------
+// conceptページ
+--------------*/
+// パンくず
+.bread {
+    &__ul {
+      display: flex;
+      flex-direction: row;
+    }
+    &__li {
+      list-style: none;
+      margin-right: 20px;
+    }
+  }
+  .hero-main {
+    padding-top: 90px;
+    position: relative;
+  
+    &__top {
+      background-color: #fdf7f1;
+      padding-top: 30px;
+  
+      &-wrapttl {
+        text-align: center;
+        position: relative;
+      }
+    }
+  }

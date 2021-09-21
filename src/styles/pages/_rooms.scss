@@ -1,0 +1,204 @@
+/*-------------
+// roomsページ
+--------------*/
+.room-main-ttl {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.room-main-subttl {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 2px;
+    background-color:#0068B6;
+  }
+}
+
+.hero-img {
+  &__ttl {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    bottom: 30px;
+
+    &-sub {
+      text-align: center;
+      position: relative;
+      bottom: 20px;
+      font-weight: 700;
+    }
+  }
+
+  //波画像箇所
+  &__weave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+
+    &-img {
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 2;
+    }
+
+    &-person01 {
+      position: absolute;
+      top: -18%;
+      left: 12%;
+      width: 5%;
+      z-index: 1;
+    }
+    &-person02 {
+      position: absolute;
+      top: -7%;
+      right: 7%;
+      width: 7%;
+      z-index: 3;
+    }
+    &-person03 {
+      position: absolute;
+      bottom: -3%;
+      left: 8%;
+      width: 8%;
+      z-index: 3;
+    }
+
+    &-wrap {
+      position: relative;
+    }
+  }
+
+  &__whiteimg {
+    width: 80%;
+    height: 60%;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    &-ttl {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+      
+      & > p {
+        margin: 0;
+      }
+    }
+
+  }
+
+  // sns,カレンダーアイコン
+  &__icon {
+    &-sns {
+      position: absolute;
+      top: 2%;
+      left: 3%;
+      z-index: 3;
+    }
+    &-face {
+      margin-top: 10px;
+    }
+
+    &-info {
+      position: absolute;
+      top: -18%;
+      right: -3px;
+      z-index: 3;
+    }
+    &-tel {
+      margin-top: 10px;
+    }
+  }
+}
+
+.map {
+  position: relative;
+  &__inner {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  &__ttl {
+    text-align: center;
+  }
+}
+
+.type {
+  background-color:#FDF7F1;
+  margin-top: 100px;
+  @extend .pt-90, .pb-90;
+
+  &__room {
+    margin: 60px 0;
+  }
+
+  &__ttl {
+    margin-bottom: 30px;
+
+    &-under {
+      margin-bottom: 20px
+    }
+  }
+
+  &__slide {
+    &-txt {
+      @extend .main-content;
+      padding-top: 60px;
+      text-align: left;
+
+      & > p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.setsubi {
+  margin-top: 50px;
+  @extend .pb-90;
+  &__toptxt {
+    @extend .main-content;
+    background-color: #FDF7F1;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+
+    & > p {
+      margin-bottom: 0
+    }
+  }
+
+  &__txt {
+    @extend .main-content;
+    text-align: left;
+    padding-top: 30px;
+
+    & > p {
+      margin-bottom: 0;
+    }
+  }
+}
+

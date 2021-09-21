@@ -1,0 +1,104 @@
+// 共通パーツ
+.mael-main {
+    &__ttl {
+      text-align: center;
+      background: #54c2f0;
+      width: 80%;
+      margin:0 auto 70px;
+      color: #fff;
+      border-radius: 10px;
+      height: 60px;
+      font-size: 22px;
+      line-height: 60px;
+    }
+  }
+
+
+.meal-info {
+  position: relative;
+  z-index: 3;
+  top: -150px;
+
+  &__inner {
+    background-color: #fff;
+    width: 80%;
+    height: 200px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  &__ttl {
+    width: 80%;
+    margin: 0 auto;
+    & > p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.meal-panel {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+   
+
+    &__inner {
+        width: 80%;
+        margin: -30px auto 70px;
+    }
+
+    &__wrap {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__ttl {
+        font-weight: 700;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 5px;
+
+        & + img {
+            width: 100%;
+        }
+    }
+
+    &__txt {
+        margin: 20px 0 40px 0;
+        line-height: 1.6;
+    }
+
+   
+    &__box {
+        width: 100%;
+        border: 1px solid #333333;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    &__span {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__seibun{
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+.morning {
+    &__inner {
+        width: 80%;
+        margin: 0 auto;
+    }
+}

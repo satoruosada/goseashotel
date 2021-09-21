@@ -1,0 +1,108 @@
+
+
+#global {
+    &-nav {
+        background: #fff;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+
+        &.m_fixed {
+            position: fixed;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: 100%;
+            padding-top: 20px;
+        }
+    }
+}
+
+.global {
+    &-list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+    }
+
+    &-item {
+        margin-right: 25px;
+
+        &:last-child {
+            border-right: 1px solid #fff;
+            margin-right: 0;
+        }
+    }
+
+    &__header {
+        &-wrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90px;
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        &-contact {
+            text-align: right;
+        }
+        
+        &-ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+        }
+        &-li {
+            list-style: none;
+            margin-right: 30px;
+        
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+        &-tel {
+            font-size: 30px;
+            font-weight: 700;
+        
+            &-span {
+                font-size: 20px;
+            }
+        }
+        
+        &-fax {
+            font-weight: 700;
+        }
+        
+        &-mail {
+            padding-left: 50px;
+            position: relative;
+        
+            & > img {
+                position: absolute;
+                top: 2px;
+                left: 25px;
+            }
+        }
+    }
+
+}
